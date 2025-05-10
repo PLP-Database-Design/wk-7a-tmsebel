@@ -16,7 +16,7 @@ VALUES
     (102, 'Jane Smith', 'Mouse'),
     (103, 'Emily Clark', 'Phone');
 -- Question 2.
--- Create Orders table for order-specific information
+-- The given table OrderDetails is in 1NF but violates 2NF due to partial dependencies (CustomerName depends only on OrderID), not the entire primary key.
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
     CustomerName VARCHAR(100)
